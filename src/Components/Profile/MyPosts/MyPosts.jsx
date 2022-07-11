@@ -10,13 +10,10 @@ const MyPosts = () => {
                 <textarea className={s.textarea_create}></textarea>
                 <button>Добавить новый пост</button>
             </div>
-            
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
-            <Post />
+           
+            <Post text="eto sozdano propsom" like="5" />
+            <Post text="Hello world!" like="999" />
+            <Post text="its my first post" like="1"/>
         </div>
 
     )
