@@ -1,33 +1,33 @@
 import React from "react";
 import s from "../Navbar/Navbar.module.css"
 
-const Navbar= ()=>{
-    return(
+const Navbar = () => {
+    return (
         <div className={s.nav}>
             <ul>
                 <li>
-                   <a href="#">
-                    Profile
+                    <a href="/profile">
+                        Profile
                     </a>
                 </li>
                 <li>
-                <a href="#">
-                    Messages
+                    <a href="/dialogs">
+                        Messages
                     </a>
                 </li>
                 <li>
-                <a href="#">
-                    News
+                    <a href="/news">
+                        News
                     </a>
                 </li>
                 <li>
-                <a href="#">
-                    Music
+                    <a href="/music">
+                        Music
                     </a>
                 </li>
                 <li>
-                <a href="#">
-                    Settings
+                    <a href="/settings">
+                        Settings
                     </a>
                 </li>
             </ul>
