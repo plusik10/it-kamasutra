@@ -6,9 +6,9 @@ const MyPosts = () => {
     return (
         <div>
             
-            <div>
-                <textarea></textarea>
-                <button>addposts</button>
+            <div className={s.create_post}>
+                <textarea className={s.textarea_create}></textarea>
+                <button>Добавить новый пост</button>
             </div>
             
             <Post />

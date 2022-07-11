@@ -4,12 +4,11 @@ import MyPosts from "./MyPosts/MyPosts";
 
 const Profile = () => {
     return (
-        <div>
+        <div className={s.content}>
             <div>
-                ava+description
-
+                Аватар+description
             </div>
-            MyPosts
+            <h2>Посты:</h2>
             <MyPosts />
         </div>
     )

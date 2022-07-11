@@ -1,0 +1,32 @@
+.post{
+    border-bottom: 1px solid black;
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    
+
+}
+.mainPost{
+    
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.avatar{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 100%;
+    box-shadow: 1px 1px 10px black;
+}
+
+.text_post
+{box-shadow: 1px 1px 10px black;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin:5px;
+    text-align: center;
+
+}
+
