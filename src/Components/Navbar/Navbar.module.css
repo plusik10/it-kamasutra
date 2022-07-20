@@ -1,35 +1,42 @@
 .nav{
-    min-width: 135px;
+    margin-right:20px;
+}
+
+.item{
     display: flex;
-    flex-grow: 0.1;
-    border-right: 1px solid black;
-}
-.nav>ul{
     text-decoration: none;
-    list-style-type: none;
-    margin:0 auto;
-    padding: 0;
-    width: 60%;
-}
-
-.nav>ul>li{
-    margin-top: 10px;
-    border:1px solid black;
-    border-radius: 40px;
-    box-shadow: 1px 1px 5px black;
-    text-align: center;
-    transition: 1s;
-    width: 100%;
+    align-items: center;
+    line-height: 2.308;
+    font-weight: 400;
+    font-size: 13px;
+    color:#000;
+    /* TODO:Поменять на VK Sans */
+    font-family: sans-serif;
 
 }
 
-.nav>ul>li:hover{
-    background-color: aqua;
-    box-shadow: 1px 1px 5px aqua;
+.item:hover{
+    background-color: #E5E7EB;
 }
-.nav>ul>li>a{
+
+.svg{
+padding-right: 10px;
+color:#5181B8;
+}
+.active{
     text-decoration: none;
-    color:black;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: 2.308;
+    font-weight: 400;
+    font-size: 13px;
+    color:#000;
+}
+.active:hover{
+        background-color: #E5E7EB;
 }
 
+.line{
+    margin-top: 5px;
+    border-bottom: 1px solid #DCE1E6;
+}
