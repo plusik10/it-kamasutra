@@ -1,37 +1,83 @@
-.create_post{
-    width: 100%;
-    text-align: center;
+textarea {
+    width: 80%;
+    overflow: auto;
+    outline: none;
+    -moz-appearance: none;
+    border: 0px;
+    resize: none;
+    padding-left: 20px;
+    font-size: 13px;
+    font-family: var(--palette-vk-font, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", arial, Tahoma, verdana, sans-serif);
+    height: 60px;
+}
+.main{
+    width: 580px;
+}
+.wrapper {
+    border-radius: 8px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    border-bottom: 1px solid black;
-    padding-bottom: 30px;
-    
-}
-.create_post>button{
-    width: 200px;
-    height: 40px;
-    border-radius: 20px;
-    margin-left: 20px;
+    box-shadow: 1px 1px 5px #d3d7db;
+    display: flex;
+    flex-direction: column;
+    width: 580px;
     background-color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 16px;
+    margin-top: 10px;
+
+}
+
+.create_post {
+    padding: 15px;
+    border-bottom: 1px solid #EDEEF0;
+    display: flex;
+}
+
+.create_post>img {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+}
+
+.btnAddPost {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    height: 30px;
+    flex-shrink: 1;
+    width: 30%;
+    color: white;
+    background: #5181B8;
+    padding: 16px;
+    border: 0px;
+    border-radius: 5px;
+
+}
+
+.submitpost {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.settings {
+    display: flex;
+    border-bottom: 1px solid #EDEEF0;
+}
+
+.item {
+    font-family: var(--palette-vk-font, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", arial, Tahoma, verdana, sans-serif);
+    padding: 15px;
+    font-size: 13px;
+    color: #626d7a;
+}
+.btnAddPost:hover{
     cursor: pointer;
-    box-shadow: 1px 1px 10px black;
-    transition: 1s;
+    background: #6091c9;
 }
 
-.create_post>button:hover{
-
-    background-color: aqua;
+.item:hover{
+    cursor: pointer;
 }
-.textarea_create{
-    width:100%;
-  resize: vertical;
-  padding:15px;
-  border-radius:15px;
-  border:0;
-  box-shadow:4px 4px 20px rgba(100, 81, 81, 0.16);
-  margin: 20px;
-  height:150px;
+.posts{
+   
 }

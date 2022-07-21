@@ -3,7 +3,9 @@
 }
 
 .item{
+    width: 121px;
     display: flex;
+    -webkit-font-smoothing:subpixel-antialiased;
     text-decoration: none;
     align-items: center;
     line-height: 2.308;
@@ -11,7 +13,7 @@
     font-size: 13px;
     color:#000;
     /* TODO:Поменять на VK Sans */
-    font-family: sans-serif;
+    font-family: var(--palette-vk-font,-apple-system,BlinkMacSystemFont,'Roboto','Helvetica Neue',Geneva,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",arial,Tahoma,verdana,sans-serif)
 
 }
 
@@ -26,6 +28,7 @@ color:#5181B8;
 .active{
     text-decoration: none;
     display: flex;
+    font-family: var(--palette-vk-font,-apple-system,BlinkMacSystemFont,'Roboto','Helvetica Neue',Geneva,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",arial,Tahoma,verdana,sans-serif);
     align-items: center;
     line-height: 2.308;
     font-weight: 400;

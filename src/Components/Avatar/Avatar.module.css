@@ -6,6 +6,7 @@
 }
 
 .main{
+    box-shadow: 1px 1px 5px #d3d7db;
     display: flex;
     flex-direction: column;
     padding:15px;
@@ -27,4 +28,74 @@
 .btnEdit:hover{
     background-color: rgba(229, 235, 241,1);
     cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+
+}
+.menu:hover .input_menu{
+    background-color: rgba(229, 235, 241,0.7);
+}
+.menu:hover svg {
+
+    background-color: rgba(229, 235, 241,0.7);
+}
+
+.menu>svg{
+    color:#55677D;
+    padding-right: 5px;
+}
+
+.input_menu{
+    color:#55677D;
+    background-color: rgba(255,255,255);
+    border: 0;
+    line-height: 2.308;
+    font-weight: 400;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.friends{
+    box-shadow: 1px 1px 5px #d3d7db;
+    color:#55677D;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    min-height: 100px;
+    padding:10px;
+    
+}
+
+.friends>b{
+    font-family: sans-serif;
+    margin-left: 8px;
+    color:black;
+}
+
+.friend>img{
+    margin: 10px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+.friend{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color:#2a5885;
+}
+
+.friendList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
