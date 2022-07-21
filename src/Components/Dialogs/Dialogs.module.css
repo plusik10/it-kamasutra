@@ -1,0 +1,5 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px #d3d7db;
+}

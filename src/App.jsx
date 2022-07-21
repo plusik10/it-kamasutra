@@ -25,7 +25,7 @@ function App() {
                 <Route path="/profile" element={<Avatar />} />          
             </Routes>
             <Routes>
-              <Route path="/dialogs" element={<Dialogs />} />
+              <Route path="/dialogs/*" element={<Dialogs />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/news" element={<News />} />
               <Route path="/settings" element={<Settings />} />
