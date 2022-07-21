@@ -47,6 +47,7 @@
 }
 .settings{
     color:#99A2AD;
+    cursor: pointer;
 }
 .companents{
     display: flex;
@@ -54,6 +55,8 @@
 }
 
 .conpanent{
+    display: flex;
+    
     align-items: center;
     text-align: center;
     width: 48px;
