@@ -5,7 +5,7 @@ import s from './DialogItems.module.css'
 
 const DialogItems=(props)=>{
     return(
-        <NavLink to={"/dialogs/"+props.id}>
+        <NavLink to={"/messages/"+props.id}>
         <div className={s.wrapper}>
             <div className={s.img}>
                 <img src="https://sun3-11.userapi.com/s/v1/if1/qcAPKr-GhvIWkP0GBfMnUBdADaic7WdSrhVLrVOF7RaxsKdqF9BeDzyG21FVhqtStCqsFA.jpg?size=50x50&quality=96&crop=6,0,2153,2153&ava=1" alt="" />

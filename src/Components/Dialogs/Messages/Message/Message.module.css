@@ -1,0 +1,26 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.profile>img{
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+
+}
+
+.name{
+    color:#2A5885;
+    margin-left: 15px;
+    display: flex;
+}
+.time{
+    margin-left: 15px;
+}
+
+.Message{
+    margin-left: 15px;
+    margin-top: 5px;
+}

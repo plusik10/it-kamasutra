@@ -2,16 +2,18 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top:15px;
+  margin-top:60px;
+
   justify-content: space-around;
 }
 .content{
-  flex-grow:1;
-  flex-shrink:1;
+  margin-left: 200px;
   display: flex;
   flex-direction: row;
 }
 .Navbar{
+  left:0;
+  position: fixed;
   margin-left: 140px;
   flex-grow: 0; flex-shrink:0;
 }

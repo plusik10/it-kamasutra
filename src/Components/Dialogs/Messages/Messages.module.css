@@ -1,0 +1,111 @@
+.wrapper{
+    background-color: white;
+    width: 750px;
+    box-shadow: 1px 1px 5px #d3d7db;
+    font-family: var(--palette-vk-font,-apple-system,BlinkMacSystemFont,'Roboto','Helvetica Neue',Geneva,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",arial,Tahoma,verdana,sans-serif);
+    
+}
+.back{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    color:#818c99;
+}
+.zaglushka{
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top:48px;
+    background: #EDEEF0;
+    height: 12px;
+    right: 0;
+}
+.zaglushka_2{
+    z-index: 1;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top:879px;
+    background: #EDEEF0;
+    height: 80px;
+    right: 0;
+}
+.back>svg{
+    color:#818c99;
+}
+.header{
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    height: 47px;
+    box-shadow: 1px 1px 5px #d3d7bd;
+}
+.name{
+    margin-left: 218px;
+    text-align: center;
+    font-weight: bold;
+}
+.profile{
+    margin-left: 300px;
+}
+.Chat{
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+    border-bottom: 1px solid #dce1e600;
+    padding:28px;
+}
+.textarea>textarea{
+    border: 1px solid #cacdcf;
+    border-radius: 6px;
+    height: 36px;
+    width: 500px;
+}
+.test{
+    height: 100px;
+}
+
+.sendMess{
+    
+    position: fixed;
+    top:800px;
+    z-index: 1;
+    background-color: white;
+    height: 62px;
+    width: 749px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #dce1e6;
+    box-shadow: 1px 1px 5px #dce1e6;
+    margin-top: 15px;
+    display: flex;
+}
+
+.subtext{
+    margin-top: 5px;
+    color:#626d7a;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.send{
+    color:#818c99
+}
+
+.profile{
+    display: flex;
+
+}
+.profile>img{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    margin-right: 15px;
+}

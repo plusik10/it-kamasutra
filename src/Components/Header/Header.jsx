@@ -6,7 +6,7 @@ const Header=()=>{
         <div className={s.header}>
             <div className={s.logo}>
                 <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/vk_logo_icon_147212.png" alt="" />
-                <b>ВКОНТАКТЕ</b>
+                <b>ВКОНСТАНТИНЕ</b>
             </div>
         </div>
     )

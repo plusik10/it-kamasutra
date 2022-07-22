@@ -3,6 +3,15 @@ import s from '../MyPosts/MyPosts.module.css'
 import Post from "./Post/Post";
 
 const MyPosts = () => {
+    let postsData=[
+    {id: 1,text:"Это созданно через масив",like:5},
+    {id:2,text:"hi",like:10},
+    {id:3,text:"Hello World",like:20}
+                  ];
+
+    let postElement= postsData.map(Posts=> <Post text={Posts.text} like={Posts.like}/>);
+        
+
     return (
         <div className={s.main}>
         <div className={s.wrapper}>
@@ -18,11 +27,11 @@ const MyPosts = () => {
                     <svg fill="none" height="8" viewBox="0 0 12 8" width="12" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M2.16 2.3a.75.75 0 0 1 1.05-.14L6 4.3l2.8-2.15a.75.75 0 1 1 .9 1.19l-3.24 2.5c-.27.2-.65.2-.92 0L2.3 3.35a.75.75 0 0 1-.13-1.05z" fill="currentColor" fill-rule="evenodd"></path></svg>
                 </div>
                 <div className={s.item}>
-                    Видно всем 
+                    Сейчас 
                     <svg fill="none" height="8" viewBox="0 0 12 8" width="12" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M2.16 2.3a.75.75 0 0 1 1.05-.14L6 4.3l2.8-2.15a.75.75 0 1 1 .9 1.19l-3.24 2.5c-.27.2-.65.2-.92 0L2.3 3.35a.75.75 0 0 1-.13-1.05z" fill="currentColor" fill-rule="evenodd"></path></svg>
                 </div>
                 <div className={s.item}>
-                    Видно всем <svg fill="none" height="8" viewBox="0 0 12 8" width="12" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M2.16 2.3a.75.75 0 0 1 1.05-.14L6 4.3l2.8-2.15a.75.75 0 1 1 .9 1.19l-3.24 2.5c-.27.2-.65.2-.92 0L2.3 3.35a.75.75 0 0 1-.13-1.05z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                    Тематика <svg fill="none" height="8" viewBox="0 0 12 8" width="12" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M2.16 2.3a.75.75 0 0 1 1.05-.14L6 4.3l2.8-2.15a.75.75 0 1 1 .9 1.19l-3.24 2.5c-.27.2-.65.2-.92 0L2.3 3.35a.75.75 0 0 1-.13-1.05z" fill="currentColor" fill-rule="evenodd"></path></svg>
                 </div>
             </div>
             <div className={s.submitpost}>
@@ -30,9 +39,7 @@ const MyPosts = () => {
                 </div>
                 </div>
             <div className={s.posts}>
-            <Post text="eto sozdano propsom" like="5" />
-            <Post text="Hello world!" like="999" />
-            <Post text="its my first post" like="1"/>
+                {postElement}
             </div>
         </div>
 

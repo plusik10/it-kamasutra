@@ -8,6 +8,7 @@ import News from "./Components/News/News";
 import Settings from "./Components/Settings/Settings";
 import Music from "./Components/Music/Music";
 import Avatar from "./Components/Avatar/Avatar";
+import Messages from "./Components/Dialogs/Messages/Messages";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/profile" element={<Avatar />} />          
             </Routes>
             <Routes>
+              <Route path="/messages/*" element={<Messages/>}/>
               <Route path="/dialogs/*" element={<Dialogs />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/news" element={<News />} />
