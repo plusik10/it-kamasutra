@@ -10,25 +10,24 @@ import Music from "./Components/Music/Music";
 import Avatar from "./Components/Avatar/Avatar";
 import Messages from "./Components/Dialogs/Messages/Messages";
 
-function App() {
+function App(props) {
+ 
   return (
     <div className="Wrapper">
-      
-      <Header />
+            <Header />
       <div className="main">
       <BrowserRouter>
         <div className="Navbar">
             <Navbar />
         </div>
-       
         <div className="content">
             <Routes>
-                <Route path="/profile" element={<Avatar />} />          
+                <Route path="/profile" element={<Avatar />} />   
             </Routes>
             <Routes>
-              <Route path="/messages/*" element={<Messages/>}/>
-              <Route path="/dialogs/*" element={<Dialogs />} />
-              <Route path="/profile" element={<Profile />} />
+              <Route path="/messages/*" element={<Messages message={props.state.profile.message} />}/>
+              <Route path="/dialogs/*" element={<Dialogs DialogsData={props.state.profile.DialogsData} />} />
+              <Route path="/profile" element={<Profile posts={props.state.posts} addPosts={props.addPosts} />} />
               <Route path="/news" element={<News />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/music" element={<Music />} />

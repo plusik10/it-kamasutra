@@ -2,15 +2,17 @@ import React from "react";
 import s from '../MyPosts/MyPosts.module.css'
 import Post from "./Post/Post";
 
-const MyPosts = () => {
-    let postsData=[
-    {id: 1,text:"Это созданно через масив",like:5},
-    {id:2,text:"hi",like:10},
-    {id:3,text:"Hello World",like:20}
-                  ];
-
-    let postElement= postsData.map(Posts=> <Post text={Posts.text} like={Posts.like}/>);
+const MyPosts = (props) => {
+    let postElement= props.posts.map(Posts=> <Post text={Posts.text} like={Posts.like}/>);
         
+    let newPostElement = React.createRef();
+
+    let addPost =() =>{
+        let text = newPostElement.current.value;
+
+        props.addPosts(text)
+    }
+    
 
     return (
         <div className={s.main}>
@@ -18,7 +20,7 @@ const MyPosts = () => {
             
             <div className={s.create_post}>
                 <img src="https://sun3-11.userapi.com/s/v1/ig2/um0jMa5T8qfns6YWISdLM19uPVJVXe4pdLEZAuHCm0C5Kx50GZpigbzvq4yJnqkHREWJB5ucplDrK8B7lmeRw87a.jpg?size=50x50&quality=96&crop=208,328,202,202&ava=1" alt="" />
-                <textarea placeholder="Что у вас нового?" className={s.textarea_create}></textarea>
+                <textarea ref={newPostElement} placeholder="Что у вас нового?" className={s.textarea_create}></textarea>
                 
             </div>
             <div className={s.settings}>
@@ -35,7 +37,7 @@ const MyPosts = () => {
                 </div>
             </div>
             <div className={s.submitpost}>
-                <button className={s.btnAddPost}>Добавить новый пост</button>
+                <button onClick={ addPost } className={s.btnAddPost}>Добавить новый пост</button>
                 </div>
                 </div>
             <div className={s.posts}>

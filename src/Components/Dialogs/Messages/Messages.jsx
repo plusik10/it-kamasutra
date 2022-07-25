@@ -3,6 +3,9 @@ import s from './Messages.module.css'
 import Message from "./Message/Message";
 
 const Messages = (props)=>{
+        let arrowMessage = props.message.map(message=><Message name={message.name} time={message.time} text={message.text}/>)
+
+
     return(
         <div className={s.wrapper}>
             <div className={s.zaglushka}></div>
@@ -12,7 +15,7 @@ const Messages = (props)=>{
                    <div className={s.back_text}></div> Назад
                 </div>
                 <div className={s.name}>
-                    Anna Nemchinova
+                    Anna nemchinova
                     <div className={s.subtext}>была в сети час назад</div>
                 </div>
                 <div className={s.profile}>
@@ -20,59 +23,8 @@ const Messages = (props)=>{
                 </div>
             </div>
             <div className={s.Chat}>
-                <Message name = "Anna Nemchinova" text = "Привет моя любовь, как твои дела?" time="12:30"/>
-                <Message name = "Константин Вахрушев" text = "Хорошо солнышко мое неземное, твои как?" time="12:31"/>
-                <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-                <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-                <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-                <Message name = "Константин Вахрушев" text = "Хорошо солнышко мое неземное, твои как?" time="12:31"/>
-                <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-                <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-                <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-               <Message name = "Anna Nemchinova" text = "Скучаю безумно..." time="12:32"/>
-                <Message name = "Anna Nemchinova" text = "Без тебя так одиноко(" time="12:33"/>
-                <Message name = "aava" text = "Без тебя так одиноко(" time="12:33"/>
-                <div className={s.test}></div>
+                {arrowMessage}
+                 <div className={s.zaglushka_3}></div>
             </div>
             <div className={s.sendMess}>
                 <div className={s.textarea}>
