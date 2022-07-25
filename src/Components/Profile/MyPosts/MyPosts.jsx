@@ -5,12 +5,18 @@ import Post from "./Post/Post";
 const MyPosts = (props) => {
     let postElement= props.posts.map(Posts=> <Post text={Posts.text} like={Posts.like}/>);
         
+
     let newPostElement = React.createRef();
 
     let addPost =() =>{
+        props.addPosts()
+
+    }
+
+    let onPostChange = () =>{
         let text = newPostElement.current.value;
 
-        props.addPosts(text)
+        props.updateNewPostText(text)
     }
     
 
@@ -20,7 +26,10 @@ const MyPosts = (props) => {
             
             <div className={s.create_post}>
                 <img src="https://sun3-11.userapi.com/s/v1/ig2/um0jMa5T8qfns6YWISdLM19uPVJVXe4pdLEZAuHCm0C5Kx50GZpigbzvq4yJnqkHREWJB5ucplDrK8B7lmeRw87a.jpg?size=50x50&quality=96&crop=208,328,202,202&ava=1" alt="" />
-                <textarea ref={newPostElement} placeholder="Что у вас нового?" className={s.textarea_create}></textarea>
+                <textarea ref={newPostElement} 
+                    onChange={onPostChange}
+                    value={props.newPostText}
+                placeholder="Что у вас нового?" className={s.textarea_create}/>
                 
             </div>
             <div className={s.settings}>

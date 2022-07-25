@@ -12,11 +12,12 @@ textarea {
 }
 .main{
     width: 580px;
+    
 }
 .wrapper {
     border-radius: 8px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     box-shadow: 1px 1px 5px #d3d7db;
     display: flex;
     flex-direction: column;
@@ -79,5 +80,6 @@ textarea {
     cursor: pointer;
 }
 .posts{
-   
+   display: flex;
+   flex-direction: column-reverse;
 }

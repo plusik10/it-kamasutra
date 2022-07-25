@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import './reset.css';
 
-import { addPost } from './redux/state';
+import { addPost,updateNewPostText } from './redux/state';
 
 
 
@@ -15,7 +15,7 @@ export let rerenderEntireTree = (state) =>{
 root.render( 
   
   <React.StrictMode >
-      <App state={state} addPosts={addPost} /> 
+      <App state={state}  updateNewPostText={updateNewPostText} addPosts={addPost} /> 
   </React.StrictMode>
 );
 }

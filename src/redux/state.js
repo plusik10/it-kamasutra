@@ -18,6 +18,7 @@ let state = {
             time: "12:33"
         }
     ],
+    newPostText: "it-kamasutra.com",
     DialogsData: [{
             id: 1,
             name: 'Anna Nemchinova',
@@ -63,13 +64,19 @@ let state = {
    }
 
 export let addPost = (postMessage) =>{
-    debugger
+
     let newPost = {
         id:5,
-        text: postMessage,
+        text: state.profile.newPostText,
         like:5
     }
     state.posts.push(newPost)
+    state.profile.newPostText = ''
+    rerenderEntireTree(state);
+}
+
+export let updateNewPostText = (newText) =>{
+    state.profile.newPostText =  newText;
     rerenderEntireTree(state);
 }
 
