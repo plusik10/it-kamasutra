@@ -3,9 +3,11 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.updateNewPostText = exports.addPost = void 0;
+exports["default"] = exports.subscribe = exports.updateNewPostText = exports.addPost = void 0;
 
-var _render = require("../render");
+var rerenderEntireTree = function rerenderEntireTree() {
+  console.log("state is changes");
+};
 
 var state = {
   profile: {
@@ -59,6 +61,7 @@ var state = {
     like: 20
   }]
 };
+window.state = state;
 
 var addPost = function addPost(postMessage) {
   var newPost = {
@@ -68,16 +71,22 @@ var addPost = function addPost(postMessage) {
   };
   state.posts.push(newPost);
   state.profile.newPostText = '';
-  (0, _render.rerenderEntireTree)(state);
+  rerenderEntireTree(state);
 };
 
 exports.addPost = addPost;
 
 var updateNewPostText = function updateNewPostText(newText) {
   state.profile.newPostText = newText;
-  (0, _render.rerenderEntireTree)(state);
+  rerenderEntireTree(state);
 };
 
 exports.updateNewPostText = updateNewPostText;
+
+var subscribe = function subscribe(observer) {
+  rerenderEntireTree = observer;
+};
+
+exports.subscribe = subscribe;
 var _default = state;
 exports["default"] = _default;
