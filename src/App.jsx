@@ -25,13 +25,15 @@ function App(props) {
                 <Route path="/profile" element={<Avatar />} />   
             </Routes>
             <Routes>
-              <Route path="/messages/*" element={<Messages message={props.state.profile.message} />}/>
-              <Route path="/dialogs/*" element={<Dialogs DialogsData={props.state.profile.DialogsData} />} />
-              <Route path="/profile" element={<Profile
-               updateNewPostText={props.updateNewPostText}
-                posts={props.state.posts} 
-                newPostText={props.state.profile.newPostText}
-                 addPosts={props.addPosts} />} />
+              <Route path="/messages/*" element={<Messages
+                    dispatch={props.dispatch}
+                    newMessageText = {props.state.DialogPage.newMessageText}
+                    message={props.state.DialogPage.Dialogs.message} />}/>
+              <Route path="/dialogs/*" element={<Dialogs DialogsData={props.state.DialogPage.Dialogs.DialogsData} />} />
+              <Route path="/profile" element={<Profile dispatch={props.dispatch} 
+                    posts={props.state.profilePage.posts} 
+                    newPostText={props.state.profilePage.newPostText}
+                    />} />
               <Route path="/news" element={<News />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/music" element={<Music />} />
